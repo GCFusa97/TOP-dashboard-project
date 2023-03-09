@@ -1,0 +1,172 @@
+
+.container {
+
+   gap: 5px;
+   height: 600px;
+   display: grid;
+   grid-template-columns: 1fr 4fr;
+   grid-template-rows: 1fr 4fr ;
+
+}
+
+.header {
+   
+   background: silver;
+   grid-column: 2/3;
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   grid-template-columns: 3fr 1fr;
+
+}
+
+.header .searchBar {
+
+   grid-column: 1/2;
+   grid-row: 1/2
+}
+
+.header .userInfo {
+   grid-column: 1/2;
+   grid-row: 2/3;
+}
+
+.header .buttons {
+   grid-column: 3/4;
+   grid-row: 1/3;
+}
+
+ .sidebar {
+
+   background: orange;
+   font-style: italic;
+   font-family: 'Courier New', Courier, monospace;
+   grid-row: 1/3;
+   display: grid;
+   grid-template-rows: 1fr 3fr 3fr;
+ }
+
+ .sidebar .branding {
+   text-align: center;
+   margin: 30px;
+ }
+
+ .navigation1 ul {
+   display: grid;
+   gap: 10px;
+   grid-template-rows: repeat(1fr*5);
+ }
+
+ .navigation1 li {
+   list-style-type: none;
+ }
+
+
+.buttons1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 30px;
+}
+
+.buttons1 span {
+  margin: 20px;
+}
+
+ .buttons2 {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  margin: 35px;
+  
+ }
+ 
+
+ .buttons2 button {
+
+   background-color: cadetblue;
+   border-radius: 10px;
+   color: aliceblue;
+ }
+
+
+ .navigation2 ul {
+   display: grid;
+   gap: 10px;
+   grid-template-rows: repeat(1fr*5);
+ }
+
+ .navigation2 li {
+   list-style-type: none;
+ }
+
+
+
+ .mainContent {
+
+   background: blue;
+   opacity: 20%;
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+
+ }
+
+ .projects {
+
+   margin: 15px;
+   display: grid;
+   gap: 15px;
+   grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
+ }
+
+ .projects div {
+
+   background: peru;
+ }
+
+ .media {
+   margin: 15px;
+   display: grid;
+   gap: 15px;
+   grid-template-rows: 1fr 1fr;
+ }
+
+ .announcements {
+
+   margin: 10px;
+   display: grid;
+   background: lightblue;
+
+ }
+
+ .trendingAnn {
+
+   margin: 10px;
+   display: grid;
+   background: lightcoral;
+
+ }
+
+
+ .mdi-view-dashboard {
+
+   height: 100px;
+   width: 100px;
+
+   
+ }
+
+ .header input {
+
+   border-radius: 10px;
+   margin: 50px;
+ }
+
+ .userInfo {
+   text-align: center;
+   margin: 10px;
+ }
+
+ .header .buttons {
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+ }
