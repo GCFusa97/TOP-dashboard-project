@@ -14,15 +14,24 @@
    background: silver;
    grid-column: 2/3;
    display: grid;
-   grid-template-rows: 1fr 1fr;
-   grid-template-columns: 3fr 1fr;
+   grid-template-rows: 1fr 2fr;
+   grid-template-columns: 2fr 1fr;
 
 }
 
-.header .searchBar {
+.header .searchBar input{
 
    grid-column: 1/2;
-   grid-row: 1/2
+   grid-row: 1/2;
+   margin-right: 0px;
+   box-shadow: 12px 12px 2px 1px lightcoral;
+  
+  }
+
+.header .searchBar button {
+
+  box-shadow: 12px 12px 2px 1px purple;
+
 }
 
 .header .userInfo {
@@ -47,7 +56,7 @@
 
  .sidebar .branding {
    text-align: center;
-   margin: 30px;
+   margin-top: 30px;
  }
 
  .navigation1 ul {
@@ -64,7 +73,7 @@
 .buttons1 {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin: 30px;
+  /* margin: 30px; */
 }
 
 .buttons1 span {
@@ -86,6 +95,13 @@
    background-color: cadetblue;
    border-radius: 10px;
    color: aliceblue;
+ }
+
+ .narrow {
+  font-size: 25px;
+  letter-spacing: -3px;
+  font-family: COUTUREBold;
+  text-shadow: 100px;
  }
 
 
@@ -156,17 +172,42 @@
  }
 
  .header input {
-
-   border-radius: 10px;
-   margin: 50px;
+  float: left;
+  padding: 6px;
+  border: none;
+  margin: 10px;
+  margin-right: 0px;
+  font-size: 20px;
  }
 
+ .searchBar button {
+
+  background-color: rebeccapurple;
+  margin: 10px;
+  margin-left: 0px;
+  padding: 4px;
+  font-size: 20px;
+}
+
  .userInfo {
-   text-align: center;
-   margin: 10px;
+   /* text-align: center; */
+   margin-top: 50px;
+   opacity: 0.33;
  }
 
  .header .buttons {
    display: grid;
-   grid-template-rows: 1fr 1fr;
+   /* grid-template-rows: 1fr 1fr; */
+ }
+
+ .navigation1 {
+
+  margin-top: 50px;
+
+ }
+
+ .navigation2 {
+
+  margin-top: 50px
+
  }
